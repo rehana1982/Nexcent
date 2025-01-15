@@ -1,5 +1,50 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --primary-color: #28cb8b;
+  --secondary-color: #263238;
+  --bg-color-one: #f5f7fa;
+  --text-color: #18191f;
+}
+body {
+  font-family: "Inter", serif;
+}
+
+.my-navbar {
+  background-color: var(--bg-color-one);
+}
+
+.navbar-btn button {
+  font-size: 14;
+}
+
+.login-btn {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  margin-right: 14px;
+}
+
+.sign-up-btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all 0.3 ease-in-out;
+}
+
+.sign-up-btn:hover {
+  background-color: #0caf6e;
+}
+
+.nav-item a {
+  color: var(--text-color);
+  transition: all 0.3 ease-in-out;
+}
+
+.nav-item > .active {
+  font-weight: 500;
+}
+
+.nav-item a:hover {
+  font-weight: 500;
 }
